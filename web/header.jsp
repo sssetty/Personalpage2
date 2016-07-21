@@ -29,7 +29,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">-->
       <ul class="nav navbar-nav">
-          <li><a href="index.jsp">About</a></li>
+          <li><a href="about.jsp">About</a></li>
         
         <li><a href="blogcontroller?action=blog">Blog</a></li>
         

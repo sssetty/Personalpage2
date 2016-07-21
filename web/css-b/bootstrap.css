@@ -5493,11 +5493,11 @@ button.list-group-item-danger.active:focus {
 }
 .panel {
   margin-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 5px;
   background-color:black;
   border: 1px solid transparent;
   border-radius: 0px;
- 
+ //margin-top:10px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -6933,14 +6933,14 @@ p.gal{
     font-size: 20px;
    // margin-left:48%;
 }
-.back{
-    padding-top: 30px;
-    background-image: url('../home/back.JPG');
-    background-repeat: no-repeat;
-    overflow: hidden;
-    width:100%;
-    height:20%;
-}
+//.back{
+    //padding-top: 30px;
+    //background-image: url('../home/back.JPG');
+    //background-repeat: no-repeat;
+  //  overflow: hidden;
+  //  width:100%;
+  //  height:20%;
+//}
 .newblog{
     padding:30px;
     margin-top: 1%;
@@ -6986,4 +6986,14 @@ header h3{
     font-size: 25px;
     color:white;
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+.about{
+    background-color:black;
+    margin:8%;
+    color:white;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    text-align: justify;
+}
+.about a{
+    color:lightslategrey;
 }
