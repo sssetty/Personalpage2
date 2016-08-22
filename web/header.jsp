@@ -28,7 +28,7 @@
      
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">-->
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav" id="head">
           <li><a href="about.jsp">About</a></li>
         
         <li><a href="blogcontroller?action=blog">Blog</a></li>
@@ -39,6 +39,11 @@
     </div>
   
 </nav>
- <!-- <script>
-     $('.navbar').slideDown(3000);
-     </script>-->
+ <script>
+     $(document).ready(function(){
+        $('.container-fluid').css("visibility","visible").hide().fadeIn(1500);
+        $('header').css("visibility","visible").hide().fadeIn(1500);
+         
+     });
+     
+     </script>

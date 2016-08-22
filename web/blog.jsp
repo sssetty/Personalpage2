@@ -38,3 +38,8 @@
     </c:forEach>
 </div>
    </div>
+<script>
+    $(document).ready(function(){
+       $('.blogouter').hide().fadeIn(1500); 
+    });
+    </script>
