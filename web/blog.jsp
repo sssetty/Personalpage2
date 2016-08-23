@@ -20,7 +20,7 @@
                 <div class="panel-body">
                    <div class="row">
                     <div class="col-md-3">
-                    <img src="<c:url value="${bloglist.imageurl}"/>" height="290" width="200" class="img-responsive">
+                    <img src="<c:url value="${bloglist.imageurl}"/>" height="300" width="400" class="img-responsive">
                     </div>
                     <div class="col-md-7 col-md-offset-1">
                     <h4><c:out value="${bloglist.blog}"/></h4>
