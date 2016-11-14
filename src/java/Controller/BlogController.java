@@ -45,13 +45,13 @@ public class BlogController extends HttpServlet {
         } else if (action.equals("login")) {
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-            String pass;
-            pass= UserData.getUser(username);
-            if(pass==null){
+            String[] user=new String[2];
+            user= UserData.getUser(username);
+            if(user[0]==null){
                 request.setAttribute("msg","No such user exists");
                 url="/admin.jsp";
             }
-            else if(pass.equals(password)){
+            else if(user[0].equals(password)){
                 session.setAttribute("user",username);
                 url="/adminportal.jsp";
             }
@@ -68,10 +68,12 @@ public class BlogController extends HttpServlet {
             BlogData.addblog(postname, imageurl, post);
             request.setAttribute("msg","Successfully added");
             url="/newblog.jsp";
-          
-            
-            
         }
+            else if(action.equals("logout")){
+                    session.invalidate();
+                    }
+            
+        
         else if (action.equals("editblog")){
             String postname = request.getParameter("postname");
             int postid = Integer.parseInt(request.getParameter("postid"));

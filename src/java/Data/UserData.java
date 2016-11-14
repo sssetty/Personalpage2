@@ -15,7 +15,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 public class UserData {
-    public static String getUser(String username){
+    public static String[] getUser(String username){
         ConnectionPool pool = ConnectionPool.getInstance();
                 Connection connection = pool.getConnection();
 	        PreparedStatement ps = null;
@@ -29,9 +29,11 @@ public class UserData {
 	            rs= ps.executeQuery();
 	            while (rs.next())
 	            {
-                        String pass;
-                	pass=rs.getString("password");
-                        return pass;
+                        String[] user=new String[2];
+                        
+                	user[0]=rs.getString("password");
+                        user[1]=rs.getString("username");
+                        return user;
                         
                     }
                     
